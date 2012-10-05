@@ -18,8 +18,8 @@ public class MC_Potions extends MacroCode {
 		for (PotionEffect p : potionEffects)
 			effects = effects.concat(StatCollector.translateToLocal(p.getEffectName()) + " " + getPotionDuration(p) + ", ");
 
-				if (effects.endsWith(", ")) return effects.substring(0, effects.length() - 2);
-				return effects;
+		if (effects.endsWith(", ")) return effects.substring(0, effects.length() - 2);
+		return effects;
 	}
 
 	static String getPotionDuration(PotionEffect effect) {

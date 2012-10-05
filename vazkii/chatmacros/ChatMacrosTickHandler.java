@@ -22,7 +22,8 @@ public class ChatMacrosTickHandler implements ITickHandler {
 	}
 
 	@Override
-	public void tickEnd(EnumSet<TickType> type, Object... tickData) {}
+	public void tickEnd(EnumSet<TickType> type, Object... tickData) {
+	}
 
 	@Override
 	public EnumSet<TickType> ticks() {

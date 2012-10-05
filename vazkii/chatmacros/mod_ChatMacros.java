@@ -13,7 +13,8 @@ import cpw.mods.fml.common.Side;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.registry.TickRegistry;
 
-@Mod(modid = "chatmacros_Vz", name = "Chat Macros", version = "by Vazkii. Version [2.0] for 1.3.2.") public class mod_ChatMacros {
+@Mod(modid = "chatmacros_Vz", name = "Chat Macros", version = "by Vazkii. Version [2.0] for 1.3.2.")
+public class mod_ChatMacros {
 
 	public static boolean macrosEnabled = true;
 	public static boolean closeOnFinish = false;

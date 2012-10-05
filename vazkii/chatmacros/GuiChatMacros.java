@@ -56,8 +56,7 @@ public class GuiChatMacros extends GuiChat {
 					}
 					else if (mod_ChatMacros.closeOnFinish) mc.displayGuiScreen((GuiScreen) null);
 					else inputField.setText("");
-				}
-				else mc.thePlayer.sendChatMessage(var3);
+				} else mc.thePlayer.sendChatMessage(var3);
 			}
 			if (mod_ChatMacros.closeOnFinish) mc.displayGuiScreen((GuiScreen) null);
 			else inputField.setText("");
@@ -66,8 +65,7 @@ public class GuiChatMacros extends GuiChat {
 
 		if (addPaneEnabled) if (inputField.isFocused()) {
 			if (inputField.textboxKeyTyped(par1, par2)) return;
-		}
-		else if (macroContentsField.isFocused()) macroContentsField.textboxKeyTyped(par1, par2);
+		} else if (macroContentsField.isFocused()) macroContentsField.textboxKeyTyped(par1, par2);
 		else macroNameField.textboxKeyTyped(par1, par2);
 
 		super.keyTyped(par1, par2);
@@ -118,39 +116,41 @@ public class GuiChatMacros extends GuiChat {
 		controlList.clear();
 	}
 
-	@Override protected void actionPerformed(GuiButton par1GuiButton) {
+	@Override
+	protected void actionPerformed(GuiButton par1GuiButton) {
 		switch (par1GuiButton.id) {
 
-		case 0: {
-			if (MacroCompound.addMacroRemotely(macroNameField.getText(), macroContentsField.getText())) {
-				macroContentsField.setText("");
-				macroNameField.setText("");
-				ChatMacrosConfig.readMacros(IOUtils.getConfigFile(EnumVazkiiMods.CHAT_MACROS));
+			case 0: {
+				if (MacroCompound.addMacroRemotely(macroNameField.getText(), macroContentsField.getText())) {
+					macroContentsField.setText("");
+					macroNameField.setText("");
+					ChatMacrosConfig.readMacros(IOUtils.getConfigFile(EnumVazkiiMods.CHAT_MACROS));
+				}
+				break;
 			}
-			break;
-		}
-		case 1: {
-			macroContentsField.setText(macroContentsField.getText().concat("¿"));
-			macroContentsField.setFocused(true);
-			break;
-		}
-		case 2: {
-			macroContentsField.setText(macroContentsField.getText().concat("¶"));
-			macroContentsField.setFocused(true);
-			break;
-		}
-		case 3: {
-			closePane();
-			break;
-		}
-		case 4: {
-			mc.displayGuiScreen(new GuiCodeList(this, macroNameField.getText(), macroContentsField.getText()));
-			break;
-		}
+			case 1: {
+				macroContentsField.setText(macroContentsField.getText().concat("¿"));
+				macroContentsField.setFocused(true);
+				break;
+			}
+			case 2: {
+				macroContentsField.setText(macroContentsField.getText().concat("¶"));
+				macroContentsField.setFocused(true);
+				break;
+			}
+			case 3: {
+				closePane();
+				break;
+			}
+			case 4: {
+				mc.displayGuiScreen(new GuiCodeList(this, macroNameField.getText(), macroContentsField.getText()));
+				break;
+			}
 		}
 	}
 
-	@Override public void drawScreen(int par1, int par2, float par3) {
+	@Override
+	public void drawScreen(int par1, int par2, float par3) {
 		drawRect(2, height - 37, fontRenderer.getStringWidth("Finish Mode: Close Chat Pane. (RCONTROL)") + 6, height - 16, Integer.MIN_VALUE);
 		if (mod_ChatMacros.macrosEnabled) drawString(fontRenderer, "§9Chat Macros §aEnabled. §9(ALT)", 2, height - 36, 0xFFFFFF);
 		else drawString(fontRenderer, "§9Chat Macros §cDisabled. §9(ALT)", 2, height - 36, 0xFFFFFF);

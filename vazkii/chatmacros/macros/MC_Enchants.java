@@ -24,8 +24,7 @@ public class MC_Enchants extends MacroCode {
 			}
 			if (enchs.endsWith(", ")) return enchs.substring(0, enchs.length() - 2);
 			return enchs;
-		}
-		else return "null";
+		} else return "null";
 	}
 
 	@Override

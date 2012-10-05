@@ -29,7 +29,7 @@ public class GuiCodeListContainer extends GuiSlot {
 	@Override
 	public int func_77210_c(int par1, int par2) {
 		System.out.println(par1 + " " + par2);
-		return super.func_77210_c(par1/*+ChatMacrosReference.CODE_GUI_OFFSET*/, par2);
+		return super.func_77210_c(par1/* +ChatMacrosReference.CODE_GUI_OFFSET */, par2);
 	}
 
 	@Override
@@ -57,5 +57,6 @@ public class GuiCodeListContainer extends GuiSlot {
 	}
 
 	@Override
-	protected void elementClicked(int var1, boolean var2) {}
+	protected void elementClicked(int var1, boolean var2) {
+	}
 }
