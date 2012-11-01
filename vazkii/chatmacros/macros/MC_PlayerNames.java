@@ -2,9 +2,10 @@ package vazkii.chatmacros.macros;
 
 import java.util.List;
 
+import vazkii.codebase.client.ClientUtils;
+
 import net.minecraft.src.EntityPlayer;
 import net.minecraft.src.World;
-import vazkii.codebase.client.ClientUtils;
 
 public class MC_PlayerNames extends MacroCode {
 
@@ -16,8 +17,8 @@ public class MC_PlayerNames extends MacroCode {
 
 		for (EntityPlayer e : l)
 			playerList = playerList.concat(e.username + ", ");
-		if (playerList.endsWith(", ")) return playerList.substring(0, playerList.length() - 2);
-		return playerList;
+				if (playerList.endsWith(", ")) return playerList.substring(0, playerList.length() - 2);
+				return playerList;
 	}
 
 	@Override

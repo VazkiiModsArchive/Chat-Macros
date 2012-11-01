@@ -23,10 +23,10 @@ public class MacroStringParser {
 			String allMacros = "Macro List: ";
 			for (String macro : MacroCompound.macroMappings.keySet())
 				allMacros = allMacros.concat(macro).concat(", ");
-			allMacros = allMacros.concat("macros, reload, add, help(macroname).");
+					allMacros = allMacros.concat("macros, reload, add, help(macroname).");
 
-			ClientUtils.getClientPlayer().addChatMessage(allMacros);
-			return null;
+					ClientUtils.getClientPlayer().addChatMessage(allMacros);
+					return null;
 		}
 
 		if (macroName.matches("reload")) {

@@ -3,8 +3,9 @@ package vazkii.chatmacros.macros;
 import java.util.List;
 import java.util.Random;
 
-import net.minecraft.src.EntityPlayer;
 import vazkii.codebase.client.ClientUtils;
+
+import net.minecraft.src.EntityPlayer;
 
 public class MC_RandomPlayer extends MacroCode {
 

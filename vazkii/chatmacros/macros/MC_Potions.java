@@ -2,9 +2,10 @@ package vazkii.chatmacros.macros;
 
 import java.util.Collection;
 
+import vazkii.codebase.client.ClientUtils;
+
 import net.minecraft.src.PotionEffect;
 import net.minecraft.src.StatCollector;
-import vazkii.codebase.client.ClientUtils;
 
 public class MC_Potions extends MacroCode {
 
@@ -18,8 +19,8 @@ public class MC_Potions extends MacroCode {
 		for (PotionEffect p : potionEffects)
 			effects = effects.concat(StatCollector.translateToLocal(p.getEffectName()) + " " + getPotionDuration(p) + ", ");
 
-		if (effects.endsWith(", ")) return effects.substring(0, effects.length() - 2);
-		return effects;
+				if (effects.endsWith(", ")) return effects.substring(0, effects.length() - 2);
+				return effects;
 	}
 
 	static String getPotionDuration(PotionEffect effect) {

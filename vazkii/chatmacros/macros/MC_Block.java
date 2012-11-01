@@ -1,9 +1,10 @@
 package vazkii.chatmacros.macros;
 
+import vazkii.codebase.client.ClientUtils;
+
 import net.minecraft.src.EntityPlayer;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.World;
-import vazkii.codebase.client.ClientUtils;
 
 public class MC_Block extends MacroCode {
 

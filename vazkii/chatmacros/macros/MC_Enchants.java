@@ -1,10 +1,11 @@
 package vazkii.chatmacros.macros;
 
+import vazkii.codebase.client.ClientUtils;
+
 import net.minecraft.src.Enchantment;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.NBTTagCompound;
 import net.minecraft.src.NBTTagList;
-import vazkii.codebase.client.ClientUtils;
 
 public class MC_Enchants extends MacroCode {
 

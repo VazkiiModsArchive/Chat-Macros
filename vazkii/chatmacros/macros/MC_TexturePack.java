@@ -6,8 +6,7 @@ public class MC_TexturePack extends MacroCode {
 
 	@Override
 	public String toString() {
-		// TODO Test implementation
-		return CommonUtils.getMc().texturePackList.getSelectedTexturePack().func_77538_c().replaceAll(".zip", "");
+		return CommonUtils.getMc().texturePackList.getSelectedTexturePack().getTexturePackFileName().replaceAll(".zip", "");
 	}
 
 	@Override

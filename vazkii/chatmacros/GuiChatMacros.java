@@ -2,17 +2,17 @@ package vazkii.chatmacros;
 
 import java.io.File;
 
+import org.lwjgl.input.Keyboard;
+
+import vazkii.codebase.common.EnumVazkiiMods;
+import vazkii.codebase.common.IOUtils;
+
 import net.minecraft.src.GuiButton;
 import net.minecraft.src.GuiChat;
 import net.minecraft.src.GuiScreen;
 import net.minecraft.src.GuiTextField;
 import net.minecraft.src.MathHelper;
 import net.minecraft.src.NBTTagCompound;
-
-import org.lwjgl.input.Keyboard;
-
-import vazkii.codebase.common.EnumVazkiiMods;
-import vazkii.codebase.common.IOUtils;
 
 public class GuiChatMacros extends GuiChat {
 
@@ -147,6 +147,7 @@ public class GuiChatMacros extends GuiChat {
 				break;
 			}
 		}
+		super.actionPerformed(par1GuiButton);
 	}
 
 	@Override

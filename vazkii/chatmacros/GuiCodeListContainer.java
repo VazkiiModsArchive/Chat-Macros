@@ -2,12 +2,13 @@ package vazkii.chatmacros;
 
 import java.util.Collection;
 
-import net.minecraft.src.FontRenderer;
-import net.minecraft.src.GuiSlot;
-import net.minecraft.src.Tessellator;
 import vazkii.chatmacros.macros.MacroCode;
 import vazkii.codebase.common.CommonUtils;
 import vazkii.codebase.common.VazcoreReference;
+
+import net.minecraft.src.FontRenderer;
+import net.minecraft.src.GuiSlot;
+import net.minecraft.src.Tessellator;
 
 public class GuiCodeListContainer extends GuiSlot {
 
@@ -28,7 +29,6 @@ public class GuiCodeListContainer extends GuiSlot {
 
 	@Override
 	public int func_77210_c(int par1, int par2) {
-		System.out.println(par1 + " " + par2);
 		return super.func_77210_c(par1/* +ChatMacrosReference.CODE_GUI_OFFSET */, par2);
 	}
 

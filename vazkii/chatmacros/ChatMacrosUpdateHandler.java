@@ -2,15 +2,16 @@ package vazkii.chatmacros;
 
 import java.awt.Dimension;
 
-import net.minecraft.src.FontRenderer;
-
 import org.lwjgl.opengl.GL11;
 
+import updatemanager.client.GuiModList;
 import vazkii.codebase.common.ColorCode;
 import vazkii.codebase.common.CommonUtils;
 import vazkii.codebase.common.FormattingCode;
 import vazkii.codebase.common.VazkiiUpdateHandler;
-import vazkii.um.client.GuiModList;
+
+import net.minecraft.src.FontRenderer;
+
 import cpw.mods.fml.common.Mod;
 
 public class ChatMacrosUpdateHandler extends VazkiiUpdateHandler {

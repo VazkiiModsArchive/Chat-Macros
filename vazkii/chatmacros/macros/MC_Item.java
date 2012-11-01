@@ -1,7 +1,8 @@
 package vazkii.chatmacros.macros;
 
-import net.minecraft.src.ItemStack;
 import vazkii.codebase.client.ClientUtils;
+
+import net.minecraft.src.ItemStack;
 
 public class MC_Item extends MacroCode {
 
