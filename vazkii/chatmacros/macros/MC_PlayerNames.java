@@ -2,9 +2,10 @@ package vazkii.chatmacros.macros;
 
 import java.util.List;
 
+import vazkii.codebase.client.ClientUtils;
+
 import net.minecraft.src.EntityPlayer;
 import net.minecraft.src.World;
-import vazkii.codebase.client.ClientUtils;
 
 public class MC_PlayerNames extends MacroCode {
 

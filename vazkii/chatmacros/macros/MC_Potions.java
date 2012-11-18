@@ -2,9 +2,10 @@ package vazkii.chatmacros.macros;
 
 import java.util.Collection;
 
+import vazkii.codebase.client.ClientUtils;
+
 import net.minecraft.src.PotionEffect;
 import net.minecraft.src.StatCollector;
-import vazkii.codebase.client.ClientUtils;
 
 public class MC_Potions extends MacroCode {
 

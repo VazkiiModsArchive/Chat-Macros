@@ -2,10 +2,12 @@ package vazkii.chatmacros;
 
 import java.util.EnumSet;
 
+import vazkii.codebase.common.CommonUtils;
 import net.minecraft.client.Minecraft;
+
 import net.minecraft.src.GuiChat;
 import net.minecraft.src.GuiScreen;
-import vazkii.codebase.common.CommonUtils;
+
 import cpw.mods.fml.common.ITickHandler;
 import cpw.mods.fml.common.TickType;
 
@@ -22,7 +24,8 @@ public class ChatMacrosTickHandler implements ITickHandler {
 	}
 
 	@Override
-	public void tickEnd(EnumSet<TickType> type, Object... tickData) {}
+	public void tickEnd(EnumSet<TickType> type, Object... tickData) {
+	}
 
 	@Override
 	public EnumSet<TickType> ticks() {

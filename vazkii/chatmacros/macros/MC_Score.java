@@ -6,7 +6,7 @@ public class MC_Score extends MacroCode {
 
 	@Override
 	public String toString() {
-		return "" + ClientUtils.getClientPlayer().score;
+		return "" + ClientUtils.getClientPlayer().getScore();
 	}
 
 	@Override
